@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AlgorithmPickerDialog</class>
+ <widget class="QDialog" name="AlgorithmPickerDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>300</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Ալգորիթմի ընտրություն</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+QDialog {
+	background-color: white;
+}
+
+QPushButton {
+	margin: 10px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>Ընտրեք ալգորիթմը</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>80</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QPushButton" name="kosarajuButton">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	font-weight: bold;
+	border-radius: 10px;
+	border: 1px solid #2586db;
+	background-color: #2586db;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+QPushButton:hover {
+	background-color: #73c5f5;
+}
+
+QPushButton:pressed {
+	background-color: #1490d9;
+}</string>
+     </property>
+     <property name="text">
+      <string>Կոսարաջու</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QPushButton" name="tarjanButton">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	font-weight: bold;
+	border-radius: 10px;
+	border: 1px solid #2e8f48;
+	background-color: #2e8f48	;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+QPushButton:hover {
+	background-color: #75d191;
+}
+
+QPushButton:pressed {
+	background-color: #0acf46;
+}</string>
+     </property>
+     <property name="text">
+      <string>Տարջան</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

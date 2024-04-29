@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/save.png</file>
+        <file>images/open.png</file>
+        <file>images/clear.png</file>
+        <file>images/convert.png</file>
+        <file>images/delete.png</file>
+        <file>images/draw.png</file>
+        <file>images/move.png</file>
+        <file>images/scc.png</file>
+        <file>images/transpose.png</file>
+        <file>images/visualize.png</file>
+        <file>images/graph.png</file>
+        <file>images/reset.png</file>
+    </qresource>
+</RCC>
