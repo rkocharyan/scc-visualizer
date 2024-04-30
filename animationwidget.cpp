@@ -63,6 +63,7 @@ void AnimationWidget::drawGraph(QList <QString> nodeLabels, QList <std::pair <QS
 
     sceneRect = rect;
 
+    QCoreApplication::processEvents();
     fitInView(sceneRect, Qt::KeepAspectRatio);
 
     stack = new Stack();
@@ -81,6 +82,7 @@ void AnimationWidget::drawGraph(QList <QString> nodeLabels, QList <std::pair <QS
 
     sceneRect = rect;
 
+    QCoreApplication::processEvents();
     fitInView(sceneRect, Qt::KeepAspectRatio);
 
     viewportRect = viewport()->rect();
@@ -530,7 +532,7 @@ void AnimationWidget::updateFrame(int frame) {
             edge->setDashed(frameData.edgeDashed[edge]);
             edge->update();
         }
-        if (!table) {
+        if (table == nullptr) {
             continue;
         }
         if (frameData.discovery.contains(node)) {
@@ -547,25 +549,24 @@ void AnimationWidget::updateFrame(int frame) {
         table->setColor(node->getLabel(), "low", Qt::white);
     }
 
-    if (frameData.addHighlightTableElement != std::pair<QString, QString>{}) {
-        auto label = frameData.addHighlightTableElement.first;
-        auto column = frameData.addHighlightTableElement.second;
-        table->setColor(label, column, addHighlightColor);
-    }
-
-    if (frameData.updateHighlightTableElement != std::pair<QString, QString>{}) {
-        auto label = frameData.updateHighlightTableElement.first;
-        auto column = frameData.updateHighlightTableElement.second;
-        table->setColor(label, column, updateHighlightColor);
-    }
-
-    if (frameData.fromHighlightTableElement != std::pair<QString, QString>{}) {
-        auto label = frameData.fromHighlightTableElement.first;
-        auto column = frameData.fromHighlightTableElement.second;
-        table->setColor(label, column, fromHighlightColor);
-    }
-
     if (table) {
+        if (frameData.addHighlightTableElement != std::pair<QString, QString>{}) {
+            auto label = frameData.addHighlightTableElement.first;
+            auto column = frameData.addHighlightTableElement.second;
+            table->setColor(label, column, addHighlightColor);
+        }
+
+        if (frameData.updateHighlightTableElement != std::pair<QString, QString>{}) {
+            auto label = frameData.updateHighlightTableElement.first;
+            auto column = frameData.updateHighlightTableElement.second;
+            table->setColor(label, column, updateHighlightColor);
+        }
+
+        if (frameData.fromHighlightTableElement != std::pair<QString, QString>{}) {
+            auto label = frameData.fromHighlightTableElement.first;
+            auto column = frameData.fromHighlightTableElement.second;
+            table->setColor(label, column, fromHighlightColor);
+        }
         table->update();
     }
 

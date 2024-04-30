@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-c587fadb74e82f120084.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "scc_algorithms_visualizer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "scc_algorithms_visualizer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scc_algorithms_visualizer-Debug-fcddef7dc5c0f597a98f.json",
+					"name" : "scc_algorithms_visualizer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scc_algorithms_visualizer_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scc_algorithms_visualizer_autogen-Debug-ec8b97ce4b31e12a60f8.json",
+					"name" : "scc_algorithms_visualizer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scc_algorithms_visualizer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scc_algorithms_visualizer_autogen_timestamp_deps-Debug-1a25ce254ef5c15f2b48.json",
+					"name" : "scc_algorithms_visualizer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Administrator/Documents/scc-visualizer/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug",
+		"source" : "C:/Users/Administrator/Documents/scc-visualizer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -27,8 +27,8 @@ public:
 private:
     QStack <std::pair <QString, QColor> > items;
 
-    const qreal itemHeight = 20;
-    const qreal itemWidth = 45;
+    const qreal itemHeight = 25;
+    const qreal itemWidth = 60;
     const qreal fontSize = 14;
     const qreal spacing = 6;
 

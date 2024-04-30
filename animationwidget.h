@@ -77,7 +77,7 @@ private:
     const QColor fromHighlightColor = QColor("yellow");
 
     QRectF sceneRect, currentRect;
-    QGraphicsTextItem *titleText;
+    QGraphicsTextItem *titleText = nullptr;
 
     int timer = 1;
     QMap <Node *, int> discovery, low;
@@ -87,8 +87,8 @@ private:
     QList <QColor> generatedColors;
     int currentColorIndex = 0;
 
-    Stack *stack;
-    Table *table;
+    Stack *stack = nullptr;
+    Table *table = nullptr;
 };
 
 #endif // ANIMATIONWIDGET_H
